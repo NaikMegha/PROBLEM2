@@ -1,0 +1,26 @@
+function createHalfPyramid (height) {
+  
+  for (var i = 1; i <= height; i++) {
+    var row = '';
+    
+    for (var j = 1; j <= (height - i); j++) {
+      row += ' ';
+    }
+    
+    for (var k = 1; k <= i; k++) {
+      row += '#';
+    }
+    
+    console.log(row);
+  }
+}
+
+example:
+The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of n
+createHalfPyramid(5)
+output:
+    #
+   ##
+  ###
+ ####
+#####
